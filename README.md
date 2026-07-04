@@ -108,6 +108,8 @@ pip install -r requirements.txt
 
 The script will also attempt to auto-install `rich` and `matplotlib` if missing, but `pip install -r requirements.txt` is the reliable path, especially in constrained/managed Python environments.
 
+`pandas` is **not required**. The old separate `render_line_charts.py` workflow has been merged into `dns_benchmark.py`, so all bar and line charts are rendered directly from the same in-memory benchmark results.
+
 ## Quick start
 
 ### Windows — double-click launchers
@@ -257,12 +259,25 @@ Each timestamped run folder (e.g. `clean_dns_safe_2026-07-03_12-08-44/`) contain
 | `dns_benchmark_results.csv` | Full table, one resolver per row |
 | `dns_timeline.csv` | Per-second success/failure timeline, useful for spotting rate-limit waves |
 | `dns_benchmark.log` | Full per-query log (every success and failure) |
-| `clean_dns_avg_latency.png` | Average latency chart |
-| `clean_dns_p95_latency.png` | P95/worst-case latency chart |
-| `clean_dns_composite_score.png` | Daily/work-safe composite ranking chart |
+| `clean_dns_avg_latency.png` | Average latency bar chart |
+| `clean_dns_avg_latency_line.png` | Average latency line/marker chart |
+| `clean_dns_p95_latency.png` | P95/worst-case latency bar chart |
+| `clean_dns_p95_latency_line.png` | P95/worst-case latency line/marker chart |
+| `clean_dns_avg_vs_p95_line.png` | Average vs P95 comparison chart showing inconsistency/stalls |
+| `clean_dns_composite_score.png` | Daily/work-safe composite ranking bar chart |
+| `clean_dns_composite_score_line.png` | Daily/work-safe composite ranking line/marker chart using the same filter as the bar chart |
 | `clean_dns_ping_latency.png` | Only generated with `--ping` |
 
 None of these are committed to the repository — see `.gitignore` and [Repository structure](#repository-structure) below.
+
+### Why old bar and line charts sometimes did not match
+
+Older versions used a separate `render_line_charts.py` file that read `dns_benchmark_results.csv` from whichever folder you happened to run it in. That could easily create line charts from a different run than the bar charts, especially when folders were timestamped or CSV files were copied around.
+
+There was also a composite-ranking logic mismatch: the main benchmark chart used the daily/work-safe filter, while the separate line-chart script used only the raw `Recommended` CSV column. That meant System/ISP, Jordan Candidate, or Family-filtered resolvers could appear in one composite chart but not the other.
+
+Current behavior: `dns_benchmark.py` now renders both the bar charts and the line charts directly from the same `ServerStats` result list, with the same timestamp and the same composite selection logic.
+
 
 ---
 
