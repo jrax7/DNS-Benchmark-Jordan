@@ -101,8 +101,8 @@ The limiter is a **strict spacing limiter**, not a bursty token bucket. `--qps 5
 Requires **Python 3.8+**.
 
 ```bash
-git clone <your-repo-url>
-cd dns-benchmark-toolkit
+git clone https://github.com/jrax7/DNS-Benchmark-Jordan.git
+cd DNS-Benchmark-Jordan
 pip install -r requirements.txt
 ```
 
