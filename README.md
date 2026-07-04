@@ -314,4 +314,4 @@ python dns_benchmark.py --extra jordan_dns_candidates_extra.txt --include-curren
 
 ## License
 
-MIT — see `LICENSE`. (Add a `LICENSE` file with the standard MIT text before publishing if one isn't already present.)
+MIT — see [`LICENSE`](LICENSE).
