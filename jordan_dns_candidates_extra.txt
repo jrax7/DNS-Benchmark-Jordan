@@ -1,0 +1,8 @@
+# No extra Jordan candidates are needed for normal runs now.
+# The useful live candidate from the last run (87.236.233.70) was promoted into dns_servers.py.
+# The candidates that timed out were moved to ARCHIVED_SERVERS and can be re-tested with --include-archived.
+#
+# Add future candidates below using one of these formats:
+# 1.2.3.4
+# 1.2.3.4 Provider Name
+# 1.2.3.4 | Provider Name | Jordan Candidate

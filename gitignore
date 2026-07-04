@@ -1,0 +1,24 @@
+# Generated benchmark output (timestamped run folders)
+clean_dns_*/
+sweep_qps_*/
+*_run_*/
+dns_results_to_send_*.zip
+
+# Generated per-run files if ever produced outside a folder
+dns_benchmark_report.txt
+dns_benchmark_results.csv
+dns_timeline.csv
+dns_benchmark.log
+*.png
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
