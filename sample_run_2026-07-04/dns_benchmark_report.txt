@@ -1,0 +1,85 @@
+==============================================================================================================
+DNS BENCHMARK REPORT — 2026-07-04 19:43:01
+Location : Amman, Jordan
+Run ID   : 2026-07-04_19-32-04
+Output   : D:\DNS\Regional Test Queries\clean_dns_safe_2026-07-04_19-32-04
+==============================================================================================================
+
+Rank  Status    Tier   Server                     IP                      Avg      P95   Jitter   Fail%     Score  Category
+---------------------------------------------------------------------------------------------------------------------------
+1     PASS      green  Cloudflare Primary         1.1.1.1               5.7ms    7.5ms    6.8ms    0.0%       5.1  Global
+2     PASS      green  JUNet/BAU DNS 2            87.236.232.5          6.0ms    7.3ms    3.5ms    1.4%       6.9  Jordan Candidate
+3     PASS      green  System / ISP DNS (192.168.1.1) 192.168.1.1           9.7ms   14.5ms   24.9ms    0.0%      11.0  System / ISP
+4     PASS      green  Cloudflare Secondary       1.0.0.1               8.3ms   29.8ms   13.3ms    0.0%      11.7  Global
+5     PASS      green  Cloudflare Malware 1       1.1.1.2              10.3ms   52.2ms   17.4ms    1.4%      19.9  Global Security
+6     PASS      green  Cloudflare Family 2        1.0.0.3              12.6ms   52.8ms   25.7ms    0.0%      20.1  Global Family
+7     PASS      green  Cloudflare Malware 2       1.0.0.2              11.3ms   57.1ms   19.6ms    1.4%      21.7  Global Security
+8     PASS      green  Cloudflare Family 1        1.1.1.3              15.5ms   62.0ms   36.2ms    1.4%      27.0  Global Family
+9     PASS      green  JUNet/AHU Gateway Candidate 87.236.233.70        37.0ms   81.4ms   33.3ms    0.0%      37.9  Jordan Candidate
+10    PASS      yellow Orange/JT Candidate 2      79.173.251.142       48.9ms   79.6ms   30.7ms    1.4%      44.8  Jordan Candidate
+11    PASS      yellow AdGuard Family 2           94.140.15.16         69.8ms   75.5ms    7.7ms    0.0%      47.7  Global Family
+12    PASS      yellow AdGuard Family 1           94.140.14.15         70.0ms   73.9ms   11.2ms    0.0%      47.9  Global Family
+13    PASS      yellow Google Secondary           8.8.4.4              66.3ms   73.9ms   12.7ms    1.4%      48.7  Global
+14    PASS      yellow AdGuard Secondary          94.140.15.15         69.2ms   74.9ms    5.6ms    1.4%      49.2  Global
+15    PASS      yellow AdGuard Non-filtering      94.140.14.140        71.2ms   79.9ms   12.8ms    0.0%      50.0  Global
+16    PASS      yellow NextDNS                    45.90.28.0           63.1ms   98.5ms   14.0ms    0.0%      50.2  Global
+17    PASS      yellow CleanBrowsing Family       185.228.168.168      64.2ms   94.8ms   16.1ms    0.0%      50.2  Global Family
+18    PASS      yellow Google Primary             8.8.8.8              67.9ms   82.2ms   20.3ms    1.4%      52.3  Global
+19    PASS      yellow AdGuard Non-filtering 2    94.140.14.141        73.6ms   82.1ms   21.2ms    0.0%      52.7  Global
+20    PASS      yellow SafeDNS                    195.46.39.39         70.0ms  114.8ms   21.1ms    0.0%      57.6  Global
+21    PASS      yellow CleanBrowsing Security     185.228.168.9        68.2ms  112.0ms   37.5ms    0.0%      58.7  Global Security
+22    PASS      yellow Neustar UltraDNS           156.154.70.1         79.4ms   84.5ms   12.3ms    2.8%      58.9  Global
+23    PASS      yellow AdGuard Primary            94.140.14.14         77.5ms   79.7ms   58.3ms    0.0%      59.6  Global
+24    PASS      yellow ControlD Free 2            76.76.10.11          73.4ms  129.8ms   24.3ms    0.0%      62.6  Global
+25    PASS      yellow Quad9 Unsecured 1          9.9.9.10             56.1ms  164.5ms   62.1ms    0.0%      67.5  Global Security
+26    PASS      yellow ControlD Free 1            76.76.2.11           75.9ms  147.0ms   32.9ms    0.0%      68.5  Global
+27    PASS      yellow Neustar Secondary          156.154.71.1         77.0ms  131.4ms   21.9ms    2.8%      68.6  Global
+28    PASS      yellow SafeDNS Secondary          195.46.39.40         81.6ms   79.8ms  117.0ms    0.0%      70.2  Global
+29    PASS      yellow JUNet/BAU DNS 1            87.236.233.117       59.1ms  174.7ms   63.5ms    0.0%      71.0  Jordan Candidate
+30    PASS      yellow Verisign Secondary         64.6.65.6            79.2ms  139.3ms   27.0ms    2.8%      72.0  Global
+31    PASS      yellow Verisign Primary           64.6.64.6            84.5ms  148.9ms   24.3ms    2.8%      75.9  Global
+32    PASS      yellow ControlD DNS 1             76.76.2.22           87.5ms  157.1ms   30.0ms    1.4%      77.5  Global
+33    DEGRADED  red    ControlD DNS 2             76.76.10.22          85.1ms  125.3ms   26.3ms    6.9%      78.4  Global
+34    PASS      yellow OpenDNS Primary            208.67.222.222       75.3ms  172.0ms   68.7ms    0.0%      78.6  Global
+35    PASS      yellow Quad9 Secondary            149.112.112.112      61.6ms  208.6ms   77.3ms    0.0%      81.0  Global
+36    PASS      yellow Quad9 Secure               9.9.9.9              60.7ms  246.5ms   62.9ms    0.0%      86.0  Global
+37    PASS      yellow OpenDNS FamilyShield 1     208.67.222.123       81.0ms  191.0ms   77.4ms    0.0%      86.2  Global Family
+38    PASS      yellow OpenDNS Secondary          208.67.220.220       86.1ms  199.8ms   74.0ms    0.0%      89.8  Global
+39    PASS      yellow Quad9 Unsecured 2          149.112.112.10       62.4ms  247.7ms   82.0ms    0.0%      89.9  Global Security
+40    PASS      yellow OpenDNS FamilyShield 2     208.67.220.123       86.1ms  172.0ms  127.7ms    4.2%      99.0  Global Family
+41    PASS      red    Yandex DNS Secondary       77.88.8.1           136.2ms  281.9ms   70.4ms    1.4%     130.4  Regional
+42    PASS      red    Yandex DNS Primary         77.88.8.8           156.2ms  335.7ms  121.1ms    0.0%     155.6  Regional
+43    PASS      red    Quad9 Secure ECS 1         9.9.9.11            208.6ms  884.3ms  279.9ms    0.0%     312.7  Global Security
+44    PASS      red    Quad9 Secure ECS 2         149.112.112.11      215.9ms  866.2ms  285.7ms    0.0%     313.2  Global Security
+45    DEAD      red    Orange/JT Candidate 1      79.173.251.155          N/A      N/A      N/A  100.0%       N/A  Jordan Candidate
+
+STATUS KEY: PASS = answered reliably | DEGRADED = answered but failed too many queries to be trustworthy | FAIL = alive at probe time but failed every query in the full test | DEAD = never answered, not benchmarked
+Jitter = stdev (ms) of successful query latency; lower is steadier.
+
+
+TOP 5 FASTEST PASSING SERVERS (raw score, may include Family DNS):
+  1. Cloudflare Primary (1.1.1.1) — Score: 5.1 | Avg: 5.7ms | Category: Global | Filters: None | Daily use: Recommended
+  2. JUNet/BAU DNS 2 (87.236.232.5) — Score: 6.9 | Avg: 6.0ms | Category: Jordan Candidate | Filters: Unknown | Daily use: Caution
+  3. System / ISP DNS (192.168.1.1) (192.168.1.1) — Score: 11.0 | Avg: 9.7ms | Category: System / ISP | Filters: Whatever your ISP currently does | Daily use: Your current baseline
+  4. Cloudflare Secondary (1.0.0.1) — Score: 11.7 | Avg: 8.3ms | Category: Global | Filters: None | Daily use: Recommended
+  5. Cloudflare Malware 1 (1.1.1.2) — Score: 19.9 | Avg: 10.3ms | Category: Global Security | Filters: Malware / phishing domains only | Daily use: Recommended
+
+RECOMMENDED SETUPS:
+  Daily/work safe: Primary = 1.1.1.1 (Cloudflare Primary)  Secondary = 1.0.0.1 (Cloudflare Secondary)
+  Jordan experimental: Primary = 87.236.232.5 (JUNet/BAU DNS 2)  Secondary = 87.236.233.70 (JUNet/AHU Gateway Candidate) — re-test before daily use.
+  Family-filtered: Primary = 1.0.0.3 (Cloudflare Family 2)  Secondary = 1.1.1.3 (Cloudflare Family 1) — only if adult-content filtering is desired.
+
+
+CATEGORY GUIDE — what each category filters and whether it's safe for daily use:
+  [Global]  Filters: None  |  Daily use: Recommended
+      Plain public resolver, no content filtering. Safe default for normal browsing, streaming, and work.
+  [Global Security]  Filters: Malware / phishing domains only  |  Daily use: Recommended
+      Blocks known-malicious domains, leaves everything else untouched. A reasonable upgrade over plain DNS for daily use — won't interfere with normal sites or work tools.
+  [Global Family]  Filters: Adult content + malware  |  Daily use: Only if you want that filtering
+      WILL block adult sites and sometimes misclassifies other sites as a side effect. Don't use this as your only resolver for general/work use unless the filtering is actually what you want (e.g. a shared family device).
+  [Regional]  Filters: Unknown / provider-dependent  |  Daily use: Case-by-case
+      Non-Jordan regional resolvers (e.g. Yandex). Check the provider's own policy before using for daily/work use.
+  [Jordan Candidate]  Filters: Unknown  |  Daily use: Caution
+      Sourced from public DNS-monitoring sites, not official ISP documentation. May be an open resolver not intended for public use, ISP-internal only, or rate-limited. Only consider one of these for daily use if it scores green AND stays green across more than one benchmark run on a different day/time.
+  [System / ISP]  Filters: Whatever your ISP currently does  |  Daily use: Your current baseline
+      Auto-discovered from this machine's current DNS settings (only present with --include-current). Useful as a comparison point against the public resolvers above.
